@@ -1,1 +1,132 @@
-aa
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yang Yang's Academic Homepage</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { background-color: #f9fafb; }
+        .dark-mode { background-color: #1f2937; color: #e5e7eb; }
+        .section-card { transition: all 0.3s ease; }
+        .section-card:hover { transform: translateY(-5px); }
+    </style>
+</head>
+<body class="min-h-screen">
+    <!-- Navigation -->
+    <nav class="bg-blue-600 p-4 text-white shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">Yang Yang</h1>
+            <div>
+                <a href="#about" class="mx-2 hover:underline">About</a>
+                <a href="#patents" class="mx-2 hover:underline">Patents</a>
+                <a href="#experience" class="mx-2 hover:underline">Experience</a>
+                <a href="#education" class="mx-2 hover:underline">Education</a>
+                <a href="#projects" class="mx-2 hover:underline">Projects</a>
+                <a href="#skills" class="mx-2 hover:underline">Skills</a>
+                <button id="theme-toggle" class="ml-4 px-2 py-1 bg-gray-200 text-gray-800 rounded">Dark Mode</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container mx-auto p-6">
+        <!-- About -->
+        <section id="about" class="mb-8 section-card bg-white p-6 rounded-lg shadow-md">
+            <h2 class="text-2xl font-semibold text-blue-600 mb-4">About Me</h2>
+            <p class="text-gray-700">
+                I am a Master's student in Computer Science at the University of Bristol, UK, with a strong focus on software engineering, machine learning, and AI-driven systems. My background is in developing high-performance systems and interactive advertising solutions. I am passionate about leveraging advanced language models and graphics technologies to solve real-world problems. Last updated: August 2025.
+            </p>
+            <p class="mt-2">
+                <strong>Email:</strong> <a href="mailto:df24465@bristol.ac.uk" class="text-blue-500 hover:underline">df24465@bristol.ac.uk</a><br>
+                <strong>Google Scholar:</strong> <a href="https://scholar.google.com/citations?user=XXXXX" class="text-blue-500 hover:underline">Profile</a>
+            </p>
+        </section>
+
+        <!-- Patents -->
+        <section id="patents" class="mb-8 section-card bg-white p-6 rounded-lg shadow-md">
+            <h2 class="text-2xl font-semibold text-blue-600 mb-4">Patents</h2>
+            <ul class="list-disc pl-5 text-gray-700">
+                <li>A039092111NC: Method, device, system, and storage media for process processing.</li>
+                <li>A840933111NC: Method, device, electronic equipment, and storage media for cache read volume adjustment.</li>
+                <li>A755043111NC: Methods, devices, terminal equipment, and storage media for interactive advertising processing.</li>
+                <li>A963204111NC: Methods, devices, terminal equipment, and storage media for interactive advertising processing.</li>
+                <li>A309841211NC: Method and device for data processing for content review.</li>
+                <li>A960721111NC: Method, device, server, and storage media for AI display adjustment.</li>
+                <li>A521088011NC: Methods, devices, servers, and storage media for virtual asset write-off.</li>
+                <li>A684659011NC: Method, device, electronic equipment, and storage media for AI advertising editing.</li>
+                <li>A454423111NC: Method, device, electronic equipment, and storage media for multi-core CPU allocation.</li>
+                <li>A264413111NC: Methods, equipment, and storage media for resource processing.</li>
+            </ul>
+            <p class="mt-2">
+                <a href="https://arxiv.org/abs/2508.xxxxx" class="text-blue-500 hover:underline">arXiv: A Method for Optimizing Interactive Advertising Efficiency</a><br>
+                <a href="https://arxiv.org/abs/2508.xxxxx" class="text-blue-500 hover:underline">arXiv: A System for Automatically Processing Emergency Response Plans</a>
+            </p>
+        </section>
+
+        <!-- Work Experience -->
+        <section id="experience" class="mb-8 section-card bg-white p-6 rounded-lg shadow-md">
+            <h2 class="text-2xl font-semibold text-blue-600 mb-4">Work Experience</h2>
+            <h3 class="text-xl font-medium">ByteDance, Server-Side Development</h3>
+            <p class="text-gray-500">August 2021 - August 2023</p>
+            <ul class="list-disc pl-5 text-gray-700">
+                <li>Developed systems for TikTok and Douyin interactive advertising projects.</li>
+                <li>Built high-availability systems for billion-dollar revenue businesses, handling millions of queries per second.</li>
+                <li>Spearheaded the "StarChain Project" for enhanced user data monetization and retention.</li>
+                <li>Engineered and optimized intelligent customer service consultation systems for Douyin.</li>
+                <li>Served as a member for YouDao Commercialization Unit Testing Committee in 2022.</li>
+            </ul>
+        </section>
+
+        <!-- Education -->
+        <section id="education" class="mb-8 section-card bg-white p-6 rounded-lg shadow-md">
+            <h2 class="text-2xl font-semibold text-blue-600 mb-4">Education</h2>
+            <h3 class="text-xl font-medium">MSc in Computer Science</h3>
+            <p class="text-gray-500">University of Bristol, UK, September 2024 - September 2025</p>
+            <p class="text-gray-700">Pursuing advanced studies in machine learning, software engineering, and AI systems.</p>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects" class="mb-8 section-card bg-white p-6 rounded-lg shadow-md">
+            <h2 class="text-2xl font-semibold text-blue-600 mb-4">Projects</h2>
+            <h3 class="text-xl font-medium">AI-Powered Medical Assistant</h3>
+            <p class="text-gray-700">Leverages advanced language models to provide interactive, personalized medical Q\&A, ensuring HIPAA/GDPR compliance.</p>
+            <h3 class="text-xl font-medium mt-4">AI-Powered Copywriting Assistant</h3>
+            <p class="text-gray-700">Generates high-quality, creative copy for marketing, blogs, and social media, supporting multiple languages and tones.</p>
+        </section>
+
+        <!-- Skills -->
+        <section id="skills" class="mb-8 section-card bg-white p-6 rounded-lg shadow-md">
+            <h2 class="text-2xl font-semibold text-blue-600 mb-4">Skills</h2>
+            <h3 class="text-lg font-medium">Programming Languages</h3>
+            <p class="text-gray-700">Proficient in Java, Python, PHP, JavaScript, Node.js, Go</p>
+            <h3 class="text-lg font-medium mt-2">Classification Algorithms</h3>
+            <p class="text-gray-700">Decision Tree, Support Vector Machine (SVM), K-Nearest Neighbors (KNN), Bayesian Network, Neural Network</p>
+            <h3 class="text-lg font-medium mt-2">Courses Completed</h3>
+            <ul class="list-disc pl-5 text-gray-700">
+                <li>Object-Oriented Programming with Java (2024)</li>
+                <li>Programming in C (2024)</li>
+                <li>Overview of Computer Architecture (2024)</li>
+                <li>Overview of Software Tools (2024)</li>
+                <li>Software Engineering Discipline and Practice (2024)</li>
+            </ul>
+            <h3 class="text-lg font-medium mt-2">Certifications</h3>
+            <p class="text-gray-700">Information Technology Project Management Professional III</p>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white text-center p-4">
+        <p>&copy; 2025 Yang Yang. Last updated: August 2025.</p>
+    </footer>
+
+    <!-- Dark Mode Toggle Script -->
+    <script>
+        const toggleButton = document.getElementById('theme-toggle');
+        toggleButton.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+            toggleButton.textContent = document.body.classList.contains('dark-mode') ? 'Light Mode' : 'Dark Mode';
+        });
+    </script>
+</body>
+</html>
